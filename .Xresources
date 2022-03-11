@@ -22,7 +22,7 @@ Xcursor.size: 16
 ! ROFI
 
 rofi.lines: 3
-rofi.font: Ubuntu 28
+rofi.font: Montserrat Medium Italic 30
 rofi.padding: 200
 rofi.location: 0
 rofi.yoffset: -200
@@ -31,5 +31,5 @@ rofi.color-window: #1D2021, #5F819D, #1D2021
 rofi.color-normal: #1D2021, #A5B6BC, #1D2021, #5F819D, #C5C8C6
 rofi.color-urgent: #1D2021, #A5B6BC, #1D2021, #5F819D, #C5C8C6
 rofi.color-active: #1D2021, #A5B6BC, #1D2021, #5F819D, #C5C8C6
-rofi.terminal: urxvt
+rofi.terminal: terminator
 rofi.levenshtein-sort: false
