@@ -16,6 +16,10 @@ exec --no-startup-id variety
 exec --no-startup-id ~/.scripts/monitor_xrandr -a
 exec --no-startup-id greenclip daemon>/dev/null
 
+# i3 lock
+bindsym $mod+l exec ~/.scripts/lock_screen
+exec "xautolock -detectsleep -time 3 -locker \"~/.scripts/lock_screen\""
+
 # rofi
 bindsym $mod+d exec --no-startup-id "rofi -show drun -font \\"DejaVu 9\\" -run-shell-command '{terminal} -e \\" {cmd}; read -n 1 -s\\"'"
 bindsym $mod+z exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
