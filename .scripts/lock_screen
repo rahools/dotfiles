@@ -1,0 +1,9 @@
+#!/bin/bash
+screenShot=/tmp/screen_locked.png
+
+if [ -f "$screenShot" ]; then
+    eval "rm $screenShot"
+fi
+eval "scrot $screenShot"
+eval "convert -scale 10% -blur 0x1 -resize 1000% $screenShot $screenShot"
+eval "i3lock -i /tmp/screen_locked.png"
